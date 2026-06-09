@@ -11,7 +11,7 @@
     "title": "Task 1",
     "description": "Python complete",
     "dueDate": "",
-    "completed": true
+    "completed": false
   },
   {
     "id": 1780971319236,
@@ -25,6 +25,6 @@
     "title": "task 3",
     "description": "",
     "dueDate": "",
-    "completed": true
+    "completed": false
   }
 ]
