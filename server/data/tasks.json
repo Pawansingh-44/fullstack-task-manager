@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Studio Graphene Assignment",
+    "completed": false,
+    "description": "Assignment - 01",
+    "dueDate": "2026-06-13"
+  },
+  {
+    "id": 1780919490600,
+    "title": "Task 1",
+    "description": "Python complete",
+    "dueDate": "",
+    "completed": true
+  },
+  {
+    "id": 1780971319236,
+    "title": "task 2",
+    "description": "",
+    "dueDate": "",
+    "completed": true
+  },
+  {
+    "id": 1780975811659,
+    "title": "task 3",
+    "description": "",
+    "dueDate": "",
+    "completed": true
+  }
+]
