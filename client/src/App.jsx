@@ -35,7 +35,7 @@ const [error, setError] = useState("");
   try {
     setError("");
 
-    const res = await axios.get("http://localhost:5000/tasks");
+    const res = await axios.get("https://fullstack-task-manager-api.onrender.com/tasks");
 
     setTasks(res.data);
   } catch (err) {
@@ -59,7 +59,7 @@ const [error, setError] = useState("");
 }, []);
 
   const handleAddConfirm = async ({ title, description, dueDate }) => {
-    await axios.post("http://localhost:5000/tasks", {
+    await axios.post("https://fullstack-task-manager-api.onrender.com/tasks", {
       id: Date.now(), title, description, dueDate, completed: false,
     });
     setShowAddModal(false);
@@ -67,7 +67,7 @@ const [error, setError] = useState("");
   };
 
   const handleEditConfirm = async ({ title, description, dueDate }) => {
-    await axios.put(`http://localhost:5000/tasks/${editTarget.id}`, {
+    await axios.put(`https://fullstack-task-manager-api.onrender.com/tasks/${editTarget.id}`, {
       ...editTarget, title, description, dueDate,
     });
     setEditTarget(null);
@@ -75,13 +75,13 @@ const [error, setError] = useState("");
   };
 
   const handleDeleteConfirm = async () => {
-    await axios.delete(`http://localhost:5000/tasks/${deleteTarget.id}`);
+    await axios.delete(`https://fullstack-task-manager-api.onrender.com/tasks/${deleteTarget.id}`);
     setDeleteTarget(null);
     fetchTasks();
   };
 
   const handleToggle = async (id) => {
-    await axios.patch(`http://localhost:5000/tasks/${id}`);
+    await axios.patch(`https://fullstack-task-manager-api.onrender.com/tasks/${id}`);
     fetchTasks();
   };
 
